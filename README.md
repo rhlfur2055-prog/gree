@@ -1,6 +1,6 @@
 # 그리 Animation Pipeline
 
-정귀찬(그리) 캐릭터 — AnimateDiff + LoRA 기반 자동 애니메이션 생성 파이프라인.
+그리 캐릭터 — AnimateDiff + LoRA 기반 자동 애니메이션 생성 파이프라인.
 
 <div align="center">
 
