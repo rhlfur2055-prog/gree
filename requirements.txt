@@ -19,9 +19,3 @@ ultralytics>=8.2.0        # YOLOv8 — yolov8n.pt 자동 다운로드 or best.pt
 # 모델: dreamshaper_8.safetensors + jeonggwichan_v1-000008.safetensors (LoRA)
 # 모션 모듈: mm_sd_v15_v2.ckpt (AnimateDiff-Evolved)
 requests>=2.31.0
-
-# BVH 모션 캡처 (master_pipeline.py, motion_harness.py)
-bvhio>=0.14.0
-
-# 선택: Blender 렌더링 (master_pipeline.py)
-# Blender 4.2 별도 설치 필요 — https://www.blender.org/download/
