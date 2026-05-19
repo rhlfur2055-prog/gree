@@ -11,7 +11,7 @@
 
 <div align="center">
 
-![그리 3D 표정 13종](assets/emotions_preview_v5.png)
+![그리 3D 표정 13종](assets/emotions_preview_v6.png)
 
 </div>
 
