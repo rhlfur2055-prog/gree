@@ -1,0 +1,47 @@
+{
+  "name": "remotion-service",
+  "version": "1.0.0",
+  "description": "Remotion 기반 숏츠 렌더러 + 통합 백엔드",
+  "main": "server-local.js",
+  "scripts": {
+    "start": "node server-local.js",
+    "render": "remotion render",
+    "studio": "remotion studio"
+  },
+  "dependencies": {
+    "@remotion/animation-utils": "^4.0.460",
+    "@remotion/bundler": "^4.0.460",
+    "@remotion/captions": "^4.0.460",
+    "@remotion/cli": "^4.0.460",
+    "@remotion/gif": "^4.0.460",
+    "@remotion/google-fonts": "^4.0.460",
+    "@remotion/layout-utils": "^4.0.460",
+    "@remotion/lottie": "^4.0.460",
+    "@remotion/media-utils": "^4.0.460",
+    "@remotion/motion-blur": "^4.0.460",
+    "@remotion/noise": "^4.0.460",
+    "@remotion/player": "^4.0.460",
+    "@remotion/preload": "^4.0.460",
+    "@remotion/renderer": "^4.0.460",
+    "@remotion/shapes": "^4.0.460",
+    "@remotion/three": "^4.0.460",
+    "@remotion/transitions": "^4.0.460",
+    "@types/three": "^0.184.1",
+    "axios": "^1.15.2",
+    "dotenv": "^17.4.2",
+    "express": "^5.2.1",
+    "openai": "^6.34.0",
+    "pg": "^8.20.0",
+    "prettier": "^3.8.3",
+    "react": "19.2.0",
+    "react-dom": "19.2.0",
+    "remotion": "^4.0.460",
+    "sharp": "^0.34.5",
+    "three": "^0.184.0"
+  },
+  "devDependencies": {
+    "@types/react": "^19.2.14",
+    "@types/react-dom": "^19.2.3",
+    "typescript": "^6.0.3"
+  }
+}

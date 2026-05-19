@@ -1,0 +1,156 @@
+{
+  "totalDuration": 45.186,
+  "segments": [
+    {
+      "sentence": "월급만으론 부족하죠.",
+      "startMs": 0,
+      "endMs": 1405
+    },
+    {
+      "sentence": "직장인도 에이아이로 부업합니다.",
+      "startMs": 1405,
+      "endMs": 3332
+    },
+    {
+      "sentence": "실제로 월 삼백만원 버는 사람들.",
+      "startMs": 3332,
+      "endMs": 5283
+    },
+    {
+      "sentence": "퇴근 후 두 시간으로요.",
+      "startMs": 5283,
+      "endMs": 6653
+    },
+    {
+      "sentence": "크몽, 숨고 에이아이 의뢰 세 배 증가.",
+      "startMs": 6653,
+      "endMs": 10043
+    },
+    {
+      "sentence": "에이아이 작업 단가 건당 삼십에서 백오십만원.",
+      "startMs": 10043,
+      "endMs": 13561
+    },
+    {
+      "sentence": "월 이백만원 이상 버는 직장인 늘고 있습니다.",
+      "startMs": 13561,
+      "endMs": 16394
+    },
+    {
+      "sentence": "에이아이 부업 다섯 가지 알려드립니다.",
+      "startMs": 16394,
+      "endMs": 18739
+    },
+    {
+      "sentence": "첫째, 에이아이 블로그 수익화.",
+      "startMs": 18739,
+      "endMs": 21003
+    },
+    {
+      "sentence": "둘째, 에이아이 썸네일 디자인 대행.",
+      "startMs": 21003,
+      "endMs": 23371
+    },
+    {
+      "sentence": "셋째, 에이아이 영상 편집 대행.",
+      "startMs": 23371,
+      "endMs": 25252
+    },
+    {
+      "sentence": "넷째, 에이아이 콘텐츠 제작 대행.",
+      "startMs": 25252,
+      "endMs": 27167
+    },
+    {
+      "sentence": "다섯째, 에이아이 챗봇 구축 대행.",
+      "startMs": 27167,
+      "endMs": 29257
+    },
+    {
+      "sentence": "시작은 간단합니다.",
+      "startMs": 29257,
+      "endMs": 30720
+    },
+    {
+      "sentence": "챗지피티 플러스 월 이만팔천원이면 충분합니다.",
+      "startMs": 30720,
+      "endMs": 34052
+    },
+    {
+      "sentence": "크몽, 숨고에 바로 등록하세요.",
+      "startMs": 34052,
+      "endMs": 36223
+    },
+    {
+      "sentence": "첫 달 목표 오십만원으로 시작하면 됩니다.",
+      "startMs": 36223,
+      "endMs": 38986
+    },
+    {
+      "sentence": "에이아이는 도구입니다.",
+      "startMs": 38986,
+      "endMs": 40101
+    },
+    {
+      "sentence": "쓰는 사람만 돈 법니다.",
+      "startMs": 40101,
+      "endMs": 41494
+    },
+    {
+      "sentence": "직장 다니면서도 됩니다.",
+      "startMs": 41494,
+      "endMs": 43189
+    },
+    {
+      "sentence": "지금 시작이 여섯 달 후를 바꿉니다.",
+      "startMs": 43189,
+      "endMs": 45186
+    }
+  ],
+  "displayTexts": [
+    "월급만으론 부족하죠",
+    "직장인도 AI로 부업합니다",
+    "실제로 월 300만원 버는 사람들",
+    "퇴근 후 2시간으로요",
+    "크몽·숨고 AI 의뢰 3배 증가",
+    "AI 작업 단가 건당 30~150만원",
+    "월 200만원+ 버는 직장인 늘고 있습니다",
+    "AI 부업 5가지 알려드립니다",
+    "① AI 블로그 수익화",
+    "② AI 썸네일 디자인 대행",
+    "③ AI 영상 편집 대행",
+    "④ AI 콘텐츠 제작 대행",
+    "⑤ AI 챗봇 구축 대행",
+    "시작은 간단합니다",
+    "ChatGPT Plus 월 28,000원이면 충분합니다",
+    "크몽·숨고에 바로 등록하세요",
+    "첫 달 목표 50만원으로 시작하면 됩니다",
+    "AI는 도구입니다",
+    "쓰는 사람만 돈 법니다",
+    "직장 다니면서도 됩니다",
+    "지금 시작이 6개월 후를 바꿉니다"
+  ],
+  "scenes": [
+    "hook",
+    "hook",
+    "hook",
+    "hook",
+    "stats",
+    "stats",
+    "stats",
+    "methods",
+    "methods",
+    "methods",
+    "methods",
+    "methods",
+    "methods",
+    "howto",
+    "howto",
+    "howto",
+    "howto",
+    "conclusion",
+    "conclusion",
+    "conclusion",
+    "cta"
+  ]
+}

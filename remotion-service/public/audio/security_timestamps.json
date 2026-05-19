@@ -1,0 +1,156 @@
+{
+  "totalDuration": 51.316,
+  "segments": [
+    {
+      "sentence": "바이브코딩 열풍 저도 압니다.",
+      "startMs": 0,
+      "endMs": 1985
+    },
+    {
+      "sentence": "코딩 몰라도 앱 만든다 맞습니다.",
+      "startMs": 1985,
+      "endMs": 3924
+    },
+    {
+      "sentence": "근데 그 앱.",
+      "startMs": 3924,
+      "endMs": 5016
+    },
+    {
+      "sentence": "지금 공개해도 안전합니까.",
+      "startMs": 5016,
+      "endMs": 6943
+    },
+    {
+      "sentence": "해커가 주소창에 칩니다.",
+      "startMs": 6943,
+      "endMs": 8847
+    },
+    {
+      "sentence": "코드마스터 사십 닷컴 슬래시 어드민.",
+      "startMs": 8847,
+      "endMs": 11599
+    },
+    {
+      "sentence": "관리자 페이지로 진입이 됐습니다.",
+      "startMs": 11599,
+      "endMs": 13665
+    },
+    {
+      "sentence": "에이아이가 짠 코드에 인증 체크가 없습니다.",
+      "startMs": 13665,
+      "endMs": 16811
+    },
+    {
+      "sentence": "고객 이름 연락처 결제정보 전부 꺼내갑니다.",
+      "startMs": 16811,
+      "endMs": 19551
+    },
+    {
+      "sentence": "국내 정보유출 신고 2025년 이천삼백팔십삼 건.",
+      "startMs": 19551,
+      "endMs": 23638
+    },
+    {
+      "sentence": "1년 만에 이십육 점 삼 퍼센트 증가.",
+      "startMs": 23638,
+      "endMs": 26355
+    },
+    {
+      "sentence": "실제 원인 깃헙 에이피아이키 노출과 제이더블유티 미검증.",
+      "startMs": 26355,
+      "endMs": 30767
+    },
+    {
+      "sentence": "배포 전 이 네 가지 확인하세요.",
+      "startMs": 30767,
+      "endMs": 33100
+    },
+    {
+      "sentence": "깃헙에 에이피아이키 비밀번호 올라가 있는지.",
+      "startMs": 33100,
+      "endMs": 35991
+    },
+    {
+      "sentence": "제이더블유티 토큰 서버에서 검증되는지.",
+      "startMs": 35991,
+      "endMs": 38441
+    },
+    {
+      "sentence": "비밀번호 비크립트 해시로 저장되는지.",
+      "startMs": 38441,
+      "endMs": 40809
+    },
+    {
+      "sentence": "닷이엔브이 깃이그노어에 등록되어 있는지.",
+      "startMs": 40809,
+      "endMs": 43375
+    },
+    {
+      "sentence": "앱은 에이아이가 만들어줍니다.",
+      "startMs": 43375,
+      "endMs": 45070
+    },
+    {
+      "sentence": "보안은 만든 사람의 몫입니다.",
+      "startMs": 45070,
+      "endMs": 46869
+    },
+    {
+      "sentence": "출시 전 보안 점검이 진짜 배포입니다.",
+      "startMs": 46869,
+      "endMs": 49191
+    },
+    {
+      "sentence": "바이브코딩의 끝은 안전한 출시입니다.",
+      "startMs": 49191,
+      "endMs": 51316
+    }
+  ],
+  "displayTexts": [
+    "바이브코딩 열풍 저도 압니다",
+    "코딩 몰라도 앱 만든다 맞습니다",
+    "근데 그 앱",
+    "지금 공개해도 안전합니까",
+    "해커가 주소창에 칩니다",
+    "codemaster40.com/admin",
+    "관리자 페이지로 진입이 됐습니다",
+    "AI가 짠 코드에 인증 체크가 없습니다",
+    "고객 이름 연락처 결제정보 전부 꺼내갑니다",
+    "국내 정보유출 신고 2025년 2383건",
+    "1년 만에 26.3% 증가",
+    "실제 원인 GitHub API키 노출과 JWT 미검증",
+    "배포 전 이 네 가지 확인하세요",
+    "GitHub에 API키 비밀번호 올라가 있는지",
+    "JWT 토큰 서버에서 검증되는지",
+    "비밀번호 bcrypt 해시로 저장되는지",
+    ".env gitignore에 등록되어 있는지",
+    "앱은 AI가 만들어줍니다",
+    "보안은 만든 사람의 몫입니다",
+    "출시 전 보안 점검이 진짜 배포입니다",
+    "바이브코딩의 끝은 안전한 출시입니다"
+  ],
+  "scenes": [
+    "hook",
+    "hook",
+    "question",
+    "question",
+    "hacker",
+    "hacker",
+    "hacker",
+    "hacker",
+    "hacker",
+    "stats",
+    "stats",
+    "stats",
+    "checklist",
+    "checklist",
+    "checklist",
+    "checklist",
+    "checklist",
+    "conclusion",
+    "conclusion",
+    "conclusion",
+    "cta"
+  ]
+}

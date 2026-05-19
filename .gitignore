@@ -1,0 +1,33 @@
+# ── 모델 바이너리 (용량 큼) ───────────────────────────────────
+*.safetensors
+*.ckpt
+*.pt
+*.pth
+
+# ── 출력물 (로컬에서만 사용) ──────────────────────────────────
+output/
+anim_test/
+anim_final/
+anim_chalk/
+dataset/
+clips/
+
+# ── Remotion / Node.js ────────────────────────────────────────
+remotion-service/node_modules/
+remotion-service/.next/
+remotion-service/out/
+remotion-service/.cache/
+
+# ── 대용량 미디어 ─────────────────────────────────────────────
+*.mp4
+*.webp
+*.gif
+
+# ── 로그 / 캐시 ───────────────────────────────────────────────
+__pycache__/
+*.pyc
+.env
+*.log
+
+# ── Claude 내부 ───────────────────────────────────────────────
+.claude/

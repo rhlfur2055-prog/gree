@@ -1,0 +1,156 @@
+{
+  "totalDuration": 35.991,
+  "segments": [
+    {
+      "sentence": "챗지피티, 클로드, 제미나이.",
+      "startMs": 0,
+      "endMs": 2264
+    },
+    {
+      "sentence": "셋 다 써봤습니다.",
+      "startMs": 2264,
+      "endMs": 3541
+    },
+    {
+      "sentence": "직장인 실무 기준으로 비교했습니다.",
+      "startMs": 3541,
+      "endMs": 5817
+    },
+    {
+      "sentence": "승자 딱 알려드립니다.",
+      "startMs": 5817,
+      "endMs": 7523
+    },
+    {
+      "sentence": "글쓰기 업무 비교합니다.",
+      "startMs": 7523,
+      "endMs": 8986
+    },
+    {
+      "sentence": "기획서, 보고서, 이메일.",
+      "startMs": 8986,
+      "endMs": 10380
+    },
+    {
+      "sentence": "클로드가 압도적 일위입니다.",
+      "startMs": 10380,
+      "endMs": 12075
+    },
+    {
+      "sentence": "코딩 자동화 비교합니다.",
+      "startMs": 12075,
+      "endMs": 13863
+    },
+    {
+      "sentence": "엑셀 매크로, 파이썬 스크립트.",
+      "startMs": 13863,
+      "endMs": 15825
+    },
+    {
+      "sentence": "클로드 일위, 챗지피티 이위.",
+      "startMs": 15825,
+      "endMs": 17903
+    },
+    {
+      "sentence": "실시간 검색 비교합니다.",
+      "startMs": 17903,
+      "endMs": 19877
+    },
+    {
+      "sentence": "최신 뉴스, 트렌드 조사.",
+      "startMs": 19877,
+      "endMs": 21629
+    },
+    {
+      "sentence": "제미나이가 압도적 일위입니다.",
+      "startMs": 21629,
+      "endMs": 23824
+    },
+    {
+      "sentence": "결론 나왔습니다.",
+      "startMs": 23824,
+      "endMs": 24892
+    },
+    {
+      "sentence": "글쓰기 문서는 클로드.",
+      "startMs": 24892,
+      "endMs": 26668
+    },
+    {
+      "sentence": "코딩 자동화는 챗지피티.",
+      "startMs": 26668,
+      "endMs": 28549
+    },
+    {
+      "sentence": "검색 리서치는 제미나이.",
+      "startMs": 28549,
+      "endMs": 30023
+    },
+    {
+      "sentence": "하나만 쓰면 손해입니다.",
+      "startMs": 30023,
+      "endMs": 31544
+    },
+    {
+      "sentence": "셋 다 무료 버전 있습니다.",
+      "startMs": 31544,
+      "endMs": 33239
+    },
+    {
+      "sentence": "오늘부터 바꿔보세요.",
+      "startMs": 33239,
+      "endMs": 34342
+    },
+    {
+      "sentence": "월 다섯 시간 이상 아낍니다.",
+      "startMs": 34342,
+      "endMs": 35991
+    }
+  ],
+  "displayTexts": [
+    "ChatGPT · Claude · Gemini",
+    "셋 다 써봤습니다",
+    "직장인 실무 기준 비교",
+    "승자 알려드립니다",
+    "글쓰기 업무 비교",
+    "기획서 · 보고서 · 이메일",
+    "Claude 압도적 1위",
+    "코딩 자동화 비교",
+    "엑셀 매크로 · 파이썬 스크립트",
+    "Claude 1위 · ChatGPT 2위",
+    "실시간 검색 비교",
+    "최신 뉴스 · 트렌드 조사",
+    "Gemini 압도적 1위",
+    "결론 나왔습니다",
+    "글쓰기 문서 → Claude",
+    "코딩 자동화 → ChatGPT",
+    "검색 리서치 → Gemini",
+    "하나만 쓰면 손해입니다",
+    "셋 다 무료 버전 있습니다",
+    "오늘부터 바꿔보세요",
+    "월 5시간 이상 아낍니다"
+  ],
+  "scenes": [
+    "hook",
+    "hook",
+    "hook",
+    "hook",
+    "writing",
+    "writing",
+    "writing",
+    "coding",
+    "coding",
+    "coding",
+    "search",
+    "search",
+    "search",
+    "split",
+    "split",
+    "split",
+    "split",
+    "conclusion",
+    "conclusion",
+    "cta",
+    "cta"
+  ]
+}

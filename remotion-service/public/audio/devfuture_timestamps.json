@@ -1,0 +1,156 @@
+{
+  "totalDuration": 42.261,
+  "segments": [
+    {
+      "sentence": "바이브코딩 열풍 그거 압니다.",
+      "startMs": 0,
+      "endMs": 1985
+    },
+    {
+      "sentence": "개발자 직업 에이아이가 뺏는다고요.",
+      "startMs": 1985,
+      "endMs": 4249
+    },
+    {
+      "sentence": "진짜로 그렇게 될까요.",
+      "startMs": 4249,
+      "endMs": 5944
+    },
+    {
+      "sentence": "데이터가 답했습니다.",
+      "startMs": 5944,
+      "endMs": 7454
+    },
+    {
+      "sentence": "이미 빅테크가 움직였습니다.",
+      "startMs": 7454,
+      "endMs": 9090
+    },
+    {
+      "sentence": "구글 마이크로소프트 개발자 만 명 해고.",
+      "startMs": 9090,
+      "endMs": 11296
+    },
+    {
+      "sentence": "에이아이 자동화가 이유였습니다.",
+      "startMs": 11296,
+      "endMs": 13281
+    },
+    {
+      "sentence": "스택오버플로우 개발자 구만 명 조사.",
+      "startMs": 13281,
+      "endMs": 15534
+    },
+    {
+      "sentence": "이미 칠십육 퍼센트가 에이아이 툴 씁니다.",
+      "startMs": 15534,
+      "endMs": 18076
+    },
+    {
+      "sentence": "깃헙 코파일럿 생산성 오십오 퍼센트 상승.",
+      "startMs": 18076,
+      "endMs": 21165
+    },
+    {
+      "sentence": "단순 코딩 업무 삼십 퍼센트 에이아이가 대체 중.",
+      "startMs": 21165,
+      "endMs": 24346
+    },
+    {
+      "sentence": "사라지는 개발자 있습니다.",
+      "startMs": 24346,
+      "endMs": 26099
+    },
+    {
+      "sentence": "복붙만 하는 개발자.",
+      "startMs": 26099,
+      "endMs": 27446
+    },
+    {
+      "sentence": "에이아이 없이 일하는 개발자.",
+      "startMs": 27446,
+      "endMs": 29222
+    },
+    {
+      "sentence": "설계 없이 코딩만 하는 개발자.",
+      "startMs": 29222,
+      "endMs": 31335
+    },
+    {
+      "sentence": "살아남는 개발자도 있습니다.",
+      "startMs": 31335,
+      "endMs": 33298
+    },
+    {
+      "sentence": "에이아이를 도구로 쓰는 개발자.",
+      "startMs": 33298,
+      "endMs": 34876
+    },
+    {
+      "sentence": "에이아이가 못 하는 설계를 하는 개발자.",
+      "startMs": 34876,
+      "endMs": 37315
+    },
+    {
+      "sentence": "개발자가 사라지는 게 아닙니다.",
+      "startMs": 37315,
+      "endMs": 38720
+    },
+    {
+      "sentence": "에이아이 못 쓰는 개발자가 사라집니다.",
+      "startMs": 38720,
+      "endMs": 40496
+    },
+    {
+      "sentence": "지금이 배울 마지막 타이밍입니다.",
+      "startMs": 40496,
+      "endMs": 42261
+    }
+  ],
+  "displayTexts": [
+    "바이브코딩 열풍 그거 압니다",
+    "개발자 직업 AI가 뺏는다고요?",
+    "진짜로 그렇게 될까요",
+    "데이터가 답했습니다",
+    "이미 빅테크가 움직였습니다",
+    "Google · MS 개발자 10,000명 해고",
+    "AI 자동화가 이유였습니다",
+    "Stack Overflow 개발자 9만 명 조사",
+    "이미 76%가 AI 툴 씁니다",
+    "GitHub Copilot 생산성 +55%",
+    "단순 코딩 30% AI가 대체 중",
+    "사라지는 개발자 있습니다",
+    "복붙만 하는 개발자",
+    "AI 없이 일하는 개발자",
+    "설계 없이 코딩만 하는 개발자",
+    "살아남는 개발자도 있습니다",
+    "AI를 도구로 쓰는 개발자",
+    "AI가 못 하는 설계를 하는 개발자",
+    "개발자가 사라지는 게 아닙니다",
+    "AI 못 쓰는 개발자가 사라집니다",
+    "지금이 배울 마지막 타이밍입니다"
+  ],
+  "scenes": [
+    "hook",
+    "hook",
+    "hook",
+    "hook",
+    "layoff",
+    "layoff",
+    "layoff",
+    "stats",
+    "stats",
+    "stats",
+    "stats",
+    "split",
+    "split",
+    "split",
+    "split",
+    "split",
+    "split",
+    "split",
+    "conclusion",
+    "conclusion",
+    "cta"
+  ]
+}

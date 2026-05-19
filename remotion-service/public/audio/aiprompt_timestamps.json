@@ -1,0 +1,156 @@
+{
+  "totalDuration": 35.759,
+  "segments": [
+    {
+      "sentence": "같은 프롬프트를 세 에이아이에 입력했습니다.",
+      "startMs": 0,
+      "endMs": 2926
+    },
+    {
+      "sentence": "결과가 달랐습니다.",
+      "startMs": 2926,
+      "endMs": 4272
+    },
+    {
+      "sentence": "직장인 기획서 작성 테스트입니다.",
+      "startMs": 4272,
+      "endMs": 6583
+    },
+    {
+      "sentence": "이 프롬프트 넣었습니다.",
+      "startMs": 6583,
+      "endMs": 8197
+    },
+    {
+      "sentence": "챗지피티 답변입니다.",
+      "startMs": 8197,
+      "endMs": 9485
+    },
+    {
+      "sentence": "구조가 평범합니다.",
+      "startMs": 9485,
+      "endMs": 10705
+    },
+    {
+      "sentence": "클로드 답변입니다.",
+      "startMs": 10705,
+      "endMs": 11761
+    },
+    {
+      "sentence": "깊이가 완전히 다릅니다.",
+      "startMs": 11761,
+      "endMs": 13061
+    },
+    {
+      "sentence": "코딩도 테스트했습니다.",
+      "startMs": 13061,
+      "endMs": 14664
+    },
+    {
+      "sentence": "엑셀 자동화 스크립트 요청입니다.",
+      "startMs": 14664,
+      "endMs": 16730
+    },
+    {
+      "sentence": "챗지피티 기본 코드 나왔습니다.",
+      "startMs": 16730,
+      "endMs": 18692
+    },
+    {
+      "sentence": "클로드 에러처리까지 완성입니다.",
+      "startMs": 18692,
+      "endMs": 20341
+    },
+    {
+      "sentence": "검색 테스트입니다.",
+      "startMs": 20341,
+      "endMs": 21711
+    },
+    {
+      "sentence": "오늘 에이아이 뉴스 요약 요청했습니다.",
+      "startMs": 21711,
+      "endMs": 24439
+    },
+    {
+      "sentence": "클로드 답변입니다.",
+      "startMs": 24439,
+      "endMs": 25821
+    },
+    {
+      "sentence": "학습 데이터 없어서 모릅니다.",
+      "startMs": 25821,
+      "endMs": 27597
+    },
+    {
+      "sentence": "제미나이 실시간 정보 바로 나옵니다.",
+      "startMs": 27597,
+      "endMs": 29942
+    },
+    {
+      "sentence": "결론 나왔습니다.",
+      "startMs": 29942,
+      "endMs": 31266
+    },
+    {
+      "sentence": "글쓰기 문서는 클로드.",
+      "startMs": 31266,
+      "endMs": 32891
+    },
+    {
+      "sentence": "검색 리서치는 제미나이.",
+      "startMs": 32891,
+      "endMs": 34366
+    },
+    {
+      "sentence": "하나만 쓰면 손해입니다.",
+      "startMs": 34366,
+      "endMs": 35759
+    }
+  ],
+  "displayTexts": [
+    "같은 프롬프트를 3 AI에 입력",
+    "결과가 달랐습니다",
+    "직장인 기획서 작성 테스트",
+    "이 프롬프트 넣었습니다",
+    "ChatGPT 답변",
+    "구조가 평범합니다",
+    "Claude 답변",
+    "깊이가 완전히 다릅니다",
+    "코딩도 테스트했습니다",
+    "엑셀 자동화 스크립트 요청",
+    "ChatGPT 기본 코드",
+    "Claude 에러처리까지 완성",
+    "검색 테스트",
+    "오늘 AI 뉴스 요약 요청",
+    "Claude 답변",
+    "학습 데이터 없어서 모릅니다",
+    "Gemini 실시간 정보 바로",
+    "결론 나왔습니다",
+    "글쓰기 문서 → Claude",
+    "검색 리서치 → Gemini",
+    "하나만 쓰면 손해입니다"
+  ],
+  "scenes": [
+    "hook",
+    "hook",
+    "hook",
+    "hook",
+    "writing",
+    "writing",
+    "writing",
+    "writing",
+    "coding",
+    "coding",
+    "coding",
+    "coding",
+    "search",
+    "search",
+    "search",
+    "search",
+    "search",
+    "split",
+    "split",
+    "split",
+    "split"
+  ]
+}
