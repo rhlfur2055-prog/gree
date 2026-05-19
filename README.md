@@ -7,11 +7,11 @@
 
 ---
 
-## 그리 — 3D 표정 12종
+## 그리 — 3D 표정 13종
 
 <div align="center">
 
-![그리 3D 표정 12종](assets/emotions_3d_preview.png)
+![그리 3D 표정 13종](assets/emotions_preview_v2.png)
 
 </div>
 
@@ -20,6 +20,7 @@
 | 1행 | 무표정 · 행복 · 슬픔 · 화남 |
 | 2행 | 놀람 · 당황 · 울음 · 오열 |
 | 3행 | 피곤 · 공허 · 패닉 · 분노 |
+| 4행 | 설렘 |
 
 > dreamshaper_8 + jeonggwichan_v6 LoRA · ComfyUI 생성 · 512×512
 
