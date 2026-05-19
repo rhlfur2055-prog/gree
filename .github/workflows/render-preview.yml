@@ -1,0 +1,36 @@
+name: Render Emotion Preview
+
+on:
+  push:
+    paths:
+      - "assets/emotions_3d/**"
+      - "assets/emotions_3d_norm/**"
+      - "scripts/build_preview_grid.py"
+  workflow_dispatch:
+
+jobs:
+  render:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Python 3.10
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.10"
+
+      - name: Install
+        run: pip install Pillow numpy
+
+      - name: Build grid
+        run: python scripts/build_preview_grid.py || echo "script TBD"
+
+      - name: Commit preview if changed
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add assets/emotions_preview_*.png 2>/dev/null || true
+          git diff --staged --quiet || git commit -m "ci: 표정 프리뷰 그리드 자동 갱신"
+          git push || true
