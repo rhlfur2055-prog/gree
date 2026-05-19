@@ -7,11 +7,11 @@
 
 ---
 
-## 그리 — 12종 표정 프리뷰
+## 그리 — 3D 표정 12종
 
 <div align="center">
 
-![그리 12종 표정](assets/emotions_preview.png)
+![그리 3D 표정 12종](assets/emotions_preview.png)
 
 </div>
 
@@ -21,7 +21,7 @@
 | 2행 | 놀람 · 당황 · 울음 · 오열 |
 | 3행 | 피곤 · 공허 · 패닉 · 분노 |
 
-> 4× 슈퍼샘플링 AA · Catmull-Rom 스플라인 · Gaussian blur 볼터치 · 반투명 눈물 레이어
+> dreamshaper_8 + jeonggwichan_v6 LoRA · ComfyUI 생성 · 512×512
 
 ---
 
