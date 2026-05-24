@@ -100,18 +100,22 @@ export const DevMemeShorts: React.FC<DevMemeProps> = (rawProps) => {
 const IntroScene: React.FC<{ title: string }> = ({ title }) => {
   const frame = useCurrentFrame();
   const { fps } = useVideoConfig();
-  const enter = spring({ frame, fps, config: { damping: 12 } });
+  // 빠른 진입 (8프레임), 막판 5프레임 페이드 아웃
+  const enter = spring({ frame, fps, config: { damping: 12, stiffness: 200 }, durationInFrames: 8 });
+  const exit = interpolate(frame, [fps * 1 - 5, fps * 1], [1, 0], { extrapolateLeft: "clamp", extrapolateRight: "clamp" });
+  const opacity = Math.min(enter, exit);
   return (
-    <AbsoluteFill style={{ justifyContent: "center", alignItems: "center", background: "#0a0a0f" }}>
+    <AbsoluteFill style={{ justifyContent: "center", alignItems: "center", background: "#0a0a0f", flexDirection: "column" }}>
       <div
         style={{
           color: "#fff",
           fontSize: 96,
           fontWeight: 900,
           letterSpacing: -2,
-          transform: `scale(${0.6 + enter * 0.4})`,
-          opacity: enter,
+          transform: `scale(${0.7 + enter * 0.3})`,
+          opacity,
           textShadow: "0 4px 24px rgba(255,255,255,0.1)",
+          textAlign: "center",
         }}
       >
         {title}
@@ -121,7 +125,7 @@ const IntroScene: React.FC<{ title: string }> = ({ title }) => {
           color: "#888",
           fontSize: 36,
           marginTop: 24,
-          opacity: enter * 0.7,
+          opacity: opacity * 0.7,
           letterSpacing: -0.5,
         }}
       >
@@ -235,12 +239,27 @@ const DevScene: React.FC<{ scene: DevMemeScene; index: number; total: number }> 
 const OutroScene: React.FC = () => {
   const frame = useCurrentFrame();
   const { fps } = useVideoConfig();
-  const enter = spring({ frame, fps, config: { damping: 12 } });
+  const enter = spring({ frame, fps, config: { damping: 12, stiffness: 200 }, durationInFrames: 8 });
   return (
     <AbsoluteFill style={{ justifyContent: "center", alignItems: "center", background: "#0a0a0f" }}>
-      <div style={{ color: "#fff", fontSize: 72, fontWeight: 900, transform: `scale(${enter})`, opacity: enter, textAlign: "center" }}>
+      <div style={{
+        color: "#fff",
+        fontSize: 80,
+        fontWeight: 900,
+        transform: `scale(${0.7 + enter * 0.3})`,
+        opacity: enter,
+        textAlign: "center",
+        lineHeight: 1.3,
+      }}>
         오늘도 디버깅 화이팅<br />
-        <span style={{ color: "#ff006e" }}>♥ 구독</span>
+        <span style={{
+          color: "#fff",
+          background: "linear-gradient(135deg, #ff006e 0%, #8338ec 100%)",
+          WebkitBackgroundClip: "text",
+          WebkitTextFillColor: "transparent",
+          backgroundClip: "text",
+          fontSize: 96,
+        }}>♥ 구독</span>
       </div>
     </AbsoluteFill>
   );
