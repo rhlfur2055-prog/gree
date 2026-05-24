@@ -42,6 +42,16 @@ import {
   DEV_MEME_DEFAULTS,
   DEV_MEME_TOTAL_FRAMES,
 } from './DevMemeShorts';
+import {
+  CodeMonitorShorts,
+  CODE_MONITOR_DEMO,
+  CODE_MONITOR_DEMO_DURATION,
+} from './CodeMonitorShorts';
+import {
+  NewsActionShorts,
+  NEWS_ACTION_DEMO,
+  NEWS_ACTION_DEMO_DURATION,
+} from './NewsActionShorts';
 
 const FPS = 30;
 
@@ -125,6 +135,63 @@ export const RemotionRoot: React.FC = () => {
           const p = props as unknown as { durationSeconds?: number; audioDurationSeconds?: number };
           const sec = Number(p.durationSeconds) || Number(p.audioDurationSeconds) || 15;
           return { durationInFrames: Math.max(FPS, Math.ceil(sec * FPS)) };
+        }}
+      />
+      {/* 그리 NEWS — 뉴스를 캐릭터들이 사무실에서 재연 (silent) */}
+      <Composition
+        id="NewsActionDemo"
+        component={NewsActionShorts as unknown as React.FC<Record<string, unknown>>}
+        fps={FPS}
+        width={1080}
+        height={1920}
+        durationInFrames={NEWS_ACTION_DEMO_DURATION}
+        defaultProps={NEWS_ACTION_DEMO as unknown as Record<string, unknown>}
+      />
+      <Composition
+        id="NewsActionEn"
+        component={NewsActionShorts as unknown as React.FC<Record<string, unknown>>}
+        fps={FPS}
+        width={1080}
+        height={1920}
+        durationInFrames={NEWS_ACTION_DEMO_DURATION}
+        defaultProps={{ ...NEWS_ACTION_DEMO, lang: "en" } as unknown as Record<string, unknown>}
+      />
+      <Composition
+        id="NewsAction"
+        component={NewsActionShorts as unknown as React.FC<Record<string, unknown>>}
+        fps={FPS}
+        width={1080}
+        height={1920}
+        durationInFrames={NEWS_ACTION_DEMO_DURATION}
+        defaultProps={NEWS_ACTION_DEMO as unknown as Record<string, unknown>}
+        calculateMetadata={async ({ props }) => {
+          const p = props as unknown as { scenes?: { duration?: number }[] };
+          const beatsSec = (p.scenes || []).reduce((a, s) => a + (s.duration || 5.0), 0);
+          return { durationInFrames: Math.ceil((1.8 + beatsSec + 1.5) * FPS) };
+        }}
+      />
+      {/* 그리 — 모니터 + 코드 + 캐릭터 PIP (프롬프트→씬 자동 생성) */}
+      <Composition
+        id="CodeMonitorDemo"
+        component={CodeMonitorShorts as unknown as React.FC<Record<string, unknown>>}
+        fps={FPS}
+        width={1080}
+        height={1920}
+        durationInFrames={CODE_MONITOR_DEMO_DURATION}
+        defaultProps={CODE_MONITOR_DEMO as unknown as Record<string, unknown>}
+      />
+      <Composition
+        id="CodeMonitor"
+        component={CodeMonitorShorts as unknown as React.FC<Record<string, unknown>>}
+        fps={FPS}
+        width={1080}
+        height={1920}
+        durationInFrames={CODE_MONITOR_DEMO_DURATION}
+        defaultProps={CODE_MONITOR_DEMO as unknown as Record<string, unknown>}
+        calculateMetadata={async ({ props }) => {
+          const p = props as unknown as { beats?: { duration: number }[] };
+          const beatsSec = (p.beats || []).reduce((a, b) => a + b.duration, 0);
+          return { durationInFrames: Math.ceil((1.3 + beatsSec) * FPS) };
         }}
       />
       {/* 그리 — 개발자 밈 silent shorts (말없이 + 다국어 자막) */}

@@ -1,0 +1,90 @@
+{
+  "version": 2,
+  "news_key": "openai_breach",
+  "headline_ko": "OpenAI 사용자 데이터 유출",
+  "headline_en": "OpenAI user data breach",
+  "headline_jp": "OpenAIユーザーデータ流出",
+  "category": "보안유출",
+  "enhanced": {
+    "ipadapter": true,
+    "ipa_weight": 0.3,
+    "ipa_end_at": 0.5,
+    "upscale_model": "4x-AnimeSharp.pth",
+    "final_resolution": [
+      1024,
+      1024
+    ]
+  },
+  "scenes": [
+    {
+      "key": "scene_01_normal",
+      "file": "scene_01_normal.mp4",
+      "caption_ko": "여느 날과 같은 오피스",
+      "caption_en": "Just another day at the office",
+      "caption_jp": "いつものオフィス",
+      "duration": 2.0,
+      "seed": 8100,
+      "enhanced": true,
+      "resolution": [
+        1024,
+        1024
+      ]
+    },
+    {
+      "key": "scene_02_intrusion",
+      "file": "scene_02_intrusion.mp4",
+      "caption_ko": "갑자기 침입한 외부인",
+      "caption_en": "Suddenly an intruder appears",
+      "caption_jp": "突然侵入する外部者",
+      "duration": 2.0,
+      "seed": 8200,
+      "enhanced": true,
+      "resolution": [
+        1024,
+        1024
+      ]
+    },
+    {
+      "key": "scene_03_theft",
+      "file": "scene_03_theft.mp4",
+      "caption_ko": "데이터가 빠져나가고 있다",
+      "caption_en": "Data is being stolen",
+      "caption_jp": "データが流出している",
+      "duration": 2.0,
+      "seed": 8300,
+      "enhanced": true,
+      "resolution": [
+        1024,
+        1024
+      ]
+    },
+    {
+      "key": "scene_04_panic",
+      "file": "scene_04_panic.mp4",
+      "caption_ko": "이미 1,000명이 털렸다",
+      "caption_en": "1,000 users already breached",
+      "caption_jp": "既に1,000人が被害",
+      "duration": 2.0,
+      "seed": 8400,
+      "enhanced": true,
+      "resolution": [
+        1024,
+        1024
+      ]
+    },
+    {
+      "key": "scene_05_aftermath",
+      "file": "scene_05_aftermath.mp4",
+      "caption_ko": "남은건 공허뿐",
+      "caption_en": "Only emptiness remains",
+      "caption_jp": "残ったのは空虚だけ",
+      "duration": 2.0,
+      "seed": 8500,
+      "enhanced": true,
+      "resolution": [
+        1024,
+        1024
+      ]
+    }
+  ]
+}
