@@ -1,35 +1,61 @@
-name: Deploy Remotion Service
+name: Deploy Showcase to Vercel
 
 on:
   push:
-    tags:
-      - "v*"
+    branches: [main]
+    paths:
+      - "showcase/**"
+      - ".github/workflows/deploy.yml"
   workflow_dispatch:
 
 jobs:
   deploy:
     runs-on: ubuntu-latest
-    defaults:
-      run:
-        working-directory: remotion-service
     steps:
       - uses: actions/checkout@v4
 
-      - name: Set up Node 18
-        uses: actions/setup-node@v4
-        with:
-          node-version: "18"
-          cache: npm
-          cache-dependency-path: remotion-service/package-lock.json
+      - name: Vercel 토큰 점검
+        id: check
+        run: |
+          if [ -n "${{ secrets.VERCEL_TOKEN }}" ]; then
+            echo "has_token=true" >> $GITHUB_OUTPUT
+          else
+            echo "has_token=false" >> $GITHUB_OUTPUT
+            echo "::warning::VERCEL_TOKEN 시크릿 미설정 — 배포 스킵. showcase/README.md 참고하여 발급 후 추가하세요."
+          fi
 
-      - name: Install
-        run: npm ci || npm install
+      - name: Vercel CLI 설치
+        if: steps.check.outputs.has_token == 'true'
+        run: npm install -g vercel@latest
 
-      - name: Build
-        run: npm run build
-
-      - name: Deploy to Vercel
-        if: ${{ env.VERCEL_TOKEN != '' }}
+      - name: Vercel pull (환경 정보 동기화)
+        if: steps.check.outputs.has_token == 'true'
+        working-directory: showcase
         env:
           VERCEL_TOKEN: ${{ secrets.VERCEL_TOKEN }}
-        run: npx vercel --prod --token "$VERCEL_TOKEN" --yes
+          VERCEL_ORG_ID: ${{ secrets.VERCEL_ORG_ID }}
+          VERCEL_PROJECT_ID: ${{ secrets.VERCEL_PROJECT_ID }}
+        run: vercel pull --yes --environment=production --token=$VERCEL_TOKEN
+
+      - name: Vercel deploy
+        if: steps.check.outputs.has_token == 'true'
+        id: deploy
+        working-directory: showcase
+        env:
+          VERCEL_TOKEN: ${{ secrets.VERCEL_TOKEN }}
+        run: |
+          URL=$(vercel deploy --prod --token=$VERCEL_TOKEN --yes)
+          echo "url=$URL" >> $GITHUB_OUTPUT
+          echo "✅ 배포 완료: $URL"
+
+      - name: 토큰 미설정 안내
+        if: steps.check.outputs.has_token == 'false'
+        run: |
+          echo "## ⚠️ Vercel 배포 스킵" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "다음 시크릿을 GitHub repo Settings → Secrets and variables → Actions에 추가하세요:" >> $GITHUB_STEP_SUMMARY
+          echo "- \`VERCEL_TOKEN\` — https://vercel.com/account/tokens" >> $GITHUB_STEP_SUMMARY
+          echo "- \`VERCEL_ORG_ID\` — Vercel 프로젝트 Settings" >> $GITHUB_STEP_SUMMARY
+          echo "- \`VERCEL_PROJECT_ID\` — Vercel 프로젝트 Settings" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "자세한 단계는 [showcase/README.md](../blob/main/showcase/README.md) 참고." >> $GITHUB_STEP_SUMMARY

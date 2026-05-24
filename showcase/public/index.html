@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="theme-color" content="#0a0a0f" />
+<title>gree · silent dev memes</title>
+<meta name="description" content="그리(gree) 캐릭터의 말없이 보는 개발자 밈. No words, just vibes." />
+<meta property="og:title" content="gree · silent dev memes" />
+<meta property="og:description" content="No words. Just vibes. 12 dev memes universally readable." />
+<meta property="og:type" content="website" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700;900&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet" />
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    background: #0a0a0f;
+    color: #fff;
+    font-family: 'Noto Sans KR', system-ui, sans-serif;
+    min-height: 100vh;
+    -webkit-font-smoothing: antialiased;
+  }
+  header {
+    position: sticky; top: 0;
+    background: rgba(10,10,15,0.85);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border-bottom: 1px solid rgba(255,255,255,0.06);
+    z-index: 100;
+    padding: 16px 24px;
+    display: flex; align-items: center; justify-content: space-between;
+  }
+  .brand { font-weight: 900; font-size: 22px; letter-spacing: -1px; }
+  .brand .dot { color: #ff006e; }
+  .lang-toggle { display: flex; gap: 4px; background: rgba(255,255,255,0.06); border-radius: 999px; padding: 4px; }
+  .lang-toggle button {
+    background: none; border: 0; color: #aaa; cursor: pointer;
+    padding: 6px 14px; border-radius: 999px; font-size: 13px; font-weight: 700;
+    transition: background 0.15s, color 0.15s;
+  }
+  .lang-toggle button.active { background: linear-gradient(135deg,#ff006e,#8338ec); color: #fff; }
+  main { max-width: 1200px; margin: 0 auto; padding: 48px 24px; }
+  .hero { text-align: center; margin-bottom: 56px; }
+  .hero h1 {
+    font-size: clamp(40px, 8vw, 80px);
+    font-weight: 900; line-height: 1.1; letter-spacing: -2px;
+    background: linear-gradient(135deg,#fff 0%,#aaa 100%);
+    -webkit-background-clip: text; background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  .hero p {
+    margin-top: 16px; color: #888; font-size: 18px;
+    font-family: 'JetBrains Mono', monospace;
+  }
+  .tag {
+    display: inline-block; margin-top: 24px;
+    padding: 8px 20px; border-radius: 999px;
+    background: rgba(255,255,255,0.06);
+    color: #ccc; font-size: 14px; font-family: 'JetBrains Mono', monospace;
+  }
+  .tag .pulse { display: inline-block; width: 8px; height: 8px; border-radius: 50%; background: #00ff88; margin-right: 8px; animation: pulse 2s infinite; }
+  @keyframes pulse { 0%,100%{opacity:1} 50%{opacity:0.4} }
+
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 20px;
+  }
+  .card {
+    background: #15151c;
+    border: 1px solid rgba(255,255,255,0.06);
+    border-radius: 20px;
+    overflow: hidden;
+    transition: transform 0.2s, border-color 0.2s;
+    cursor: pointer;
+  }
+  .card:hover { transform: translateY(-4px); border-color: rgba(255,0,110,0.4); }
+  .card video {
+    width: 100%; aspect-ratio: 1/1; object-fit: cover; display: block;
+    background: #000;
+  }
+  .card .body { padding: 16px 18px 18px; }
+  .card .label {
+    font-size: 18px; font-weight: 900; letter-spacing: -0.5px;
+    background: linear-gradient(135deg,#ff006e,#8338ec);
+    -webkit-background-clip: text; background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  .card .key {
+    margin-top: 6px;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 12px; color: #666;
+  }
+
+  .emotions-section { margin-top: 80px; }
+  .section-title {
+    font-size: 28px; font-weight: 900; letter-spacing: -1px;
+    margin-bottom: 8px;
+  }
+  .section-sub {
+    color: #888; font-size: 14px; font-family: 'JetBrains Mono', monospace;
+    margin-bottom: 28px;
+  }
+  .emotions-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+    gap: 12px;
+  }
+  .emotion-card {
+    background: linear-gradient(180deg,#fef9f3 0%,#fde4d4 100%);
+    border-radius: 16px; aspect-ratio: 1/1;
+    display: flex; align-items: center; justify-content: center;
+    padding: 8px;
+  }
+  .emotion-card img { width: 100%; height: 100%; object-fit: contain; }
+
+  footer {
+    margin-top: 100px; padding: 32px 24px;
+    border-top: 1px solid rgba(255,255,255,0.06);
+    text-align: center; color: #666; font-size: 13px;
+    font-family: 'JetBrains Mono', monospace;
+  }
+  footer a { color: #888; text-decoration: none; border-bottom: 1px dashed #444; }
+  footer a:hover { color: #fff; }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="brand">gree<span class="dot">.</span> dev memes</div>
+  <div class="lang-toggle" role="tablist" aria-label="언어 선택">
+    <button data-lang="ko" class="active">KO</button>
+    <button data-lang="en">EN</button>
+    <button data-lang="jp">JP</button>
+  </div>
+</header>
+
+<main>
+  <section class="hero">
+    <h1 data-i18n="title">개발자의 하루</h1>
+    <p data-i18n="subtitle">no words. just vibes.</p>
+    <div class="tag"><span class="pulse"></span><span data-i18n="tag">말없이 보는 12개 클립</span></div>
+  </section>
+
+  <section>
+    <h2 class="section-title" data-i18n="memes_title">12 Dev Memes</h2>
+    <p class="section-sub" data-i18n="memes_sub">AnimateDiff + jeonggwichan_v6 LoRA · 2초 루프 · 512×512</p>
+    <div class="grid" id="grid"></div>
+  </section>
+
+  <section class="emotions-section">
+    <h2 class="section-title" data-i18n="emotions_title">12 Expressions</h2>
+    <p class="section-sub" data-i18n="emotions_sub">ComfyUI img2img · 캐릭터 높이 435px 통일</p>
+    <div class="emotions-grid" id="emotions"></div>
+  </section>
+</main>
+
+<footer>
+  <p>Built with Remotion 4 + AnimateDiff-Evolved + ComfyUI</p>
+  <p style="margin-top:8px"><a href="https://github.com/rhlfur2055-prog/gree" target="_blank" rel="noopener">GitHub →</a></p>
+</footer>
+
+<script>
+const I18N = {
+  ko: { title: "개발자의 하루", subtitle: "no words. just vibes.", tag: "말없이 보는 12개 클립",
+        memes_title: "개발자 밈 12종", memes_sub: "AnimateDiff + jeonggwichan_v6 · 2초 × 12",
+        emotions_title: "표정 12종", emotions_sub: "ComfyUI img2img · 캐릭터 높이 435px 통일" },
+  en: { title: "A Developer's Day", subtitle: "no words. just vibes.", tag: "12 silent clips, universally readable",
+        memes_title: "12 Dev Memes", memes_sub: "AnimateDiff + jeonggwichan_v6 · 2s × 12",
+        emotions_title: "12 Expressions", emotions_sub: "ComfyUI img2img · normalized to 435px height" },
+  jp: { title: "開発者の一日", subtitle: "no words. just vibes.", tag: "字幕だけで分かる12本のクリップ",
+        memes_title: "開発者ミーム12種", memes_sub: "AnimateDiff + jeonggwichan_v6 · 2秒 × 12",
+        emotions_title: "表情12種", emotions_sub: "ComfyUI img2img · キャラ高さ435px統一" },
+};
+const EMOTIONS = ["neutral","happy","sad","angry","surprised","embarrassed","cry","excited","tired","dead_inside","panic","furious"];
+
+let currentLang = "ko";
+
+async function loadCatalog() {
+  const res = await fetch("./catalog.json");
+  const data = await res.json();
+  return data.scenes;
+}
+
+function renderClips(scenes) {
+  const grid = document.getElementById("grid");
+  grid.innerHTML = "";
+  scenes.forEach((s, i) => {
+    const label = s[`label_${currentLang === "ko" ? "ko" : currentLang === "en" ? "en" : "jp"}`] || s.label_ko;
+    const card = document.createElement("div");
+    card.className = "card";
+    card.innerHTML = `
+      <video src="./clips/${s.file}" autoplay loop muted playsinline preload="metadata"></video>
+      <div class="body">
+        <div class="label">${label}</div>
+        <div class="key">#${String(i+1).padStart(2,"0")} · ${s.key}</div>
+      </div>
+    `;
+    grid.appendChild(card);
+  });
+}
+
+function renderEmotions() {
+  const wrap = document.getElementById("emotions");
+  wrap.innerHTML = EMOTIONS.map(e =>
+    `<div class="emotion-card" title="${e}"><img src="./emotions/${e}.png" alt="${e}" loading="lazy" /></div>`
+  ).join("");
+}
+
+function applyI18n() {
+  const t = I18N[currentLang];
+  document.querySelectorAll("[data-i18n]").forEach(el => {
+    el.textContent = t[el.dataset.i18n] || el.textContent;
+  });
+  document.documentElement.lang = currentLang;
+}
+
+// 다국어 자막 데이터 보강 (한국 자료에서 다른 언어 라벨이 빠진 경우 폴백)
+async function init() {
+  const scenes = await loadCatalog();
+  // 기본 catalog에 label_en/jp 없으면 추가
+  const EXTRA = {
+    compile_error:   { en: "Compile Error", jp: "コンパイルエラー" },
+    it_works:        { en: "Works on my machine", jp: "私のPCでは動く" },
+    "401_unauthorized": { en: "401 Unauthorized", jp: "401 認証失敗" },
+    prod_bug_3am:    { en: "3 AM Prod Bug", jp: "深夜3時の本番バグ" },
+    friday_deploy:   { en: "Friday Deploy", jp: "金曜デプロイ" },
+    code_review:     { en: "Code Review", jp: "コードレビュー" },
+    git_force_push:  { en: "git push --force", jp: "git push --force" },
+    stack_overflow:  { en: "Stack Overflow ftw", jp: "Stack Overflow最高" },
+    why_works:       { en: "Why does it work?", jp: "なぜ動く?" },
+    null_pointer:    { en: "NullPointerException", jp: "NullPointerException" },
+    merge_conflict:  { en: "Merge Conflict", jp: "マージコンフリクト" },
+    ship_friday:     { en: "Friday 6PM Exit", jp: "金曜定時退社" },
+  };
+  scenes.forEach(s => {
+    if (EXTRA[s.key]) {
+      s.label_en = s.label_en || EXTRA[s.key].en;
+      s.label_jp = s.label_jp || EXTRA[s.key].jp;
+    }
+  });
+
+  renderClips(scenes);
+  renderEmotions();
+  applyI18n();
+
+  document.querySelectorAll(".lang-toggle button").forEach(btn => {
+    btn.addEventListener("click", () => {
+      document.querySelectorAll(".lang-toggle button").forEach(b => b.classList.remove("active"));
+      btn.classList.add("active");
+      currentLang = btn.dataset.lang;
+      renderClips(scenes);
+      applyI18n();
+    });
+  });
+}
+init();
+</script>
+</body>
+</html>

@@ -127,7 +127,35 @@ export const RemotionRoot: React.FC = () => {
           return { durationInFrames: Math.max(FPS, Math.ceil(sec * FPS)) };
         }}
       />
-      {/* 그리 — 개발자 밈 12 시나리오 (AnimateDiff 모션 클립) */}
+      {/* 그리 — 개발자 밈 silent shorts (말없이 + 다국어 자막) */}
+      <Composition
+        id="DevMemeShortsKo"
+        component={DevMemeShorts as unknown as React.FC<Record<string, unknown>>}
+        fps={FPS}
+        width={1080}
+        height={1920}
+        durationInFrames={DEV_MEME_TOTAL_FRAMES}
+        defaultProps={{ ...DEV_MEME_DEFAULTS, lang: "ko" } as unknown as Record<string, unknown>}
+      />
+      <Composition
+        id="DevMemeShortsEn"
+        component={DevMemeShorts as unknown as React.FC<Record<string, unknown>>}
+        fps={FPS}
+        width={1080}
+        height={1920}
+        durationInFrames={DEV_MEME_TOTAL_FRAMES}
+        defaultProps={{ ...DEV_MEME_DEFAULTS, lang: "en" } as unknown as Record<string, unknown>}
+      />
+      <Composition
+        id="DevMemeShortsJp"
+        component={DevMemeShorts as unknown as React.FC<Record<string, unknown>>}
+        fps={FPS}
+        width={1080}
+        height={1920}
+        durationInFrames={DEV_MEME_TOTAL_FRAMES}
+        defaultProps={{ ...DEV_MEME_DEFAULTS, lang: "jp" } as unknown as Record<string, unknown>}
+      />
+      {/* 기존 호환 (silent ko 동일) */}
       <Composition
         id="DevMemeShorts"
         component={DevMemeShorts as unknown as React.FC<Record<string, unknown>>}
