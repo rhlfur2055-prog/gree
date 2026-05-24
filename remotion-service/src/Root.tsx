@@ -31,6 +31,12 @@ import {
   defaultVrewCodingCleanProps,
   VREW_CODING_CLEAN_TOTAL_FRAMES,
 } from './VrewCodingCleanShorts';
+import {
+  GreeEmotionShorts,
+  GREE_EMOTION_DEFAULTS,
+  ALL_EMOTIONS_DEMO,
+  GREE_EMOTION_TOTAL_FRAMES,
+} from './GreeEmotionShorts';
 
 const FPS = 30;
 
@@ -114,6 +120,32 @@ export const RemotionRoot: React.FC = () => {
           const p = props as unknown as { durationSeconds?: number; audioDurationSeconds?: number };
           const sec = Number(p.durationSeconds) || Number(p.audioDurationSeconds) || 15;
           return { durationInFrames: Math.max(FPS, Math.ceil(sec * FPS)) };
+        }}
+      />
+      {/* 그리 12종 표정 데모 */}
+      <Composition
+        id="GreeAllEmotions"
+        component={GreeEmotionShorts as unknown as React.FC<Record<string, unknown>>}
+        fps={FPS}
+        width={1080}
+        height={1920}
+        durationInFrames={Math.ceil((ALL_EMOTIONS_DEMO.audioDuration || 24) * FPS)}
+        defaultProps={ALL_EMOTIONS_DEMO as unknown as Record<string, unknown>}
+      />
+      {/* 그리 — 동적 길이 (오디오 + 비트로 자동 산정) */}
+      <Composition
+        id="GreeEmotion"
+        component={GreeEmotionShorts as unknown as React.FC<Record<string, unknown>>}
+        fps={FPS}
+        width={1080}
+        height={1920}
+        durationInFrames={GREE_EMOTION_TOTAL_FRAMES}
+        defaultProps={GREE_EMOTION_DEFAULTS as unknown as Record<string, unknown>}
+        calculateMetadata={async ({ props }) => {
+          const p = props as unknown as { audioDuration?: number; beats?: { end: number }[] };
+          const fromBeats = p.beats?.length ? Math.max(...p.beats.map((b) => b.end)) : 0;
+          const sec = Math.max(Number(p.audioDuration) || 0, fromBeats, 3);
+          return { durationInFrames: Math.ceil((sec + 0.3) * FPS) };
         }}
       />
       <Composition

@@ -6,7 +6,11 @@
   "scripts": {
     "start": "node server-local.js",
     "render": "remotion render",
-    "studio": "remotion studio"
+    "studio": "remotion studio",
+    "tts": "node scripts/generate-tts.mjs",
+    "whisper": "node scripts/transcribe-whisper.mjs",
+    "make-shorts": "node scripts/make-shorts.mjs",
+    "demo": "node scripts/make-shorts.mjs --comp GreeAllEmotions --no-audio --out ../out"
   },
   "dependencies": {
     "@remotion/animation-utils": "^4.0.460",
