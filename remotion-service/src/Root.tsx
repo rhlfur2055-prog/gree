@@ -37,6 +37,11 @@ import {
   ALL_EMOTIONS_DEMO,
   GREE_EMOTION_TOTAL_FRAMES,
 } from './GreeEmotionShorts';
+import {
+  DevMemeShorts,
+  DEV_MEME_DEFAULTS,
+  DEV_MEME_TOTAL_FRAMES,
+} from './DevMemeShorts';
 
 const FPS = 30;
 
@@ -121,6 +126,16 @@ export const RemotionRoot: React.FC = () => {
           const sec = Number(p.durationSeconds) || Number(p.audioDurationSeconds) || 15;
           return { durationInFrames: Math.max(FPS, Math.ceil(sec * FPS)) };
         }}
+      />
+      {/* 그리 — 개발자 밈 12 시나리오 (AnimateDiff 모션 클립) */}
+      <Composition
+        id="DevMemeShorts"
+        component={DevMemeShorts as unknown as React.FC<Record<string, unknown>>}
+        fps={FPS}
+        width={1080}
+        height={1920}
+        durationInFrames={DEV_MEME_TOTAL_FRAMES}
+        defaultProps={DEV_MEME_DEFAULTS as unknown as Record<string, unknown>}
       />
       {/* 그리 12종 표정 데모 */}
       <Composition

@@ -1,0 +1,185 @@
+{
+  "version": 1,
+  "scenes": [
+    {
+      "key": "compile_error",
+      "label_ko": "컴파일 에러",
+      "emotion_ref": "panic",
+      "motion_prompt": "panicking with sweat drops, hands on head, looking at glowing computer screen with red error text, neon office, dramatic light",
+      "file": "compile_error.mp4",
+      "duration": 2.0,
+      "frames": 16,
+      "fps": 8,
+      "size": [
+        512,
+        512
+      ],
+      "seed": 4160
+    },
+    {
+      "key": "it_works",
+      "label_ko": "내 컴에선 됐는데",
+      "emotion_ref": "happy",
+      "motion_prompt": "happy smug pose, arms crossed, slight smirk, blue computer screen background, satisfied confident",
+      "file": "it_works.mp4",
+      "duration": 2.0,
+      "frames": 16,
+      "fps": 8,
+      "size": [
+        512,
+        512
+      ],
+      "seed": 4260
+    },
+    {
+      "key": "401_unauthorized",
+      "label_ko": "401 인증실패",
+      "emotion_ref": "dead_inside",
+      "motion_prompt": "sitting in front of laptop, completely empty hollow eyes, slumped posture, dark room, monitor showing 401 error red text",
+      "file": "401_unauthorized.mp4",
+      "duration": 2.0,
+      "frames": 16,
+      "fps": 8,
+      "size": [
+        512,
+        512
+      ],
+      "seed": 4360
+    },
+    {
+      "key": "prod_bug_3am",
+      "label_ko": "새벽 3시 프로덕션 버그",
+      "emotion_ref": "cry",
+      "motion_prompt": "crying with tears on cheeks, sitting hunched over laptop in dark room, only screen light, coffee cups around",
+      "file": "prod_bug_3am.mp4",
+      "duration": 2.0,
+      "frames": 16,
+      "fps": 8,
+      "size": [
+        512,
+        512
+      ],
+      "seed": 4460
+    },
+    {
+      "key": "friday_deploy",
+      "label_ko": "금요일 배포",
+      "emotion_ref": "panic",
+      "motion_prompt": "running away in panic, looking back terrified, arms flailing, server room neon background",
+      "file": "friday_deploy.mp4",
+      "duration": 2.0,
+      "frames": 16,
+      "fps": 8,
+      "size": [
+        512,
+        512
+      ],
+      "seed": 4560
+    },
+    {
+      "key": "code_review",
+      "label_ko": "코드 리뷰",
+      "emotion_ref": "sad",
+      "motion_prompt": "reading paper sad, drooping shoulders, gray background, defeated look, monitor with red comments",
+      "file": "code_review.mp4",
+      "duration": 2.0,
+      "frames": 16,
+      "fps": 8,
+      "size": [
+        512,
+        512
+      ],
+      "seed": 4660
+    },
+    {
+      "key": "git_force_push",
+      "label_ko": "git push --force",
+      "emotion_ref": "furious",
+      "motion_prompt": "furious raging, fists raised high, mouth wide open shouting, red flames background, dramatic angry pose",
+      "file": "git_force_push.mp4",
+      "duration": 2.0,
+      "frames": 16,
+      "fps": 8,
+      "size": [
+        512,
+        512
+      ],
+      "seed": 4760
+    },
+    {
+      "key": "stack_overflow",
+      "label_ko": "스택오버플로우 답 찾음",
+      "emotion_ref": "excited",
+      "motion_prompt": "excited celebration pose, arms up cheering, sparkles around, bright happy yellow background, found solution joy",
+      "file": "stack_overflow.mp4",
+      "duration": 2.0,
+      "frames": 16,
+      "fps": 8,
+      "size": [
+        512,
+        512
+      ],
+      "seed": 4860
+    },
+    {
+      "key": "why_works",
+      "label_ko": "왜 되지?",
+      "emotion_ref": "surprised",
+      "motion_prompt": "extremely surprised confused, mouth open wide, scratching head, floating question marks, looking at code",
+      "file": "why_works.mp4",
+      "duration": 2.0,
+      "frames": 16,
+      "fps": 8,
+      "size": [
+        512,
+        512
+      ],
+      "seed": 4960
+    },
+    {
+      "key": "null_pointer",
+      "label_ko": "NullPointerException",
+      "emotion_ref": "dead_inside",
+      "motion_prompt": "blank dead expression, head tilted down, depressed sitting alone, void dark gray background",
+      "file": "null_pointer.mp4",
+      "duration": 2.0,
+      "frames": 16,
+      "fps": 8,
+      "size": [
+        512,
+        512
+      ],
+      "seed": 5060
+    },
+    {
+      "key": "merge_conflict",
+      "label_ko": "머지 컨플릭트",
+      "emotion_ref": "embarrassed",
+      "motion_prompt": "embarrassed panicking, sweat drops, hands raised defensive, looking at branching tree diagram, pink cheeks",
+      "file": "merge_conflict.mp4",
+      "duration": 2.0,
+      "frames": 16,
+      "fps": 8,
+      "size": [
+        512,
+        512
+      ],
+      "seed": 5160
+    },
+    {
+      "key": "ship_friday",
+      "label_ko": "금요일 칼퇴",
+      "emotion_ref": "tired",
+      "motion_prompt": "exhausted yawning, half closed eyes, slouched walking, carrying briefcase, sunset office background",
+      "file": "ship_friday.mp4",
+      "duration": 2.0,
+      "frames": 16,
+      "fps": 8,
+      "size": [
+        512,
+        512
+      ],
+      "seed": 5260
+    }
+  ]
+}

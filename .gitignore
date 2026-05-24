@@ -23,6 +23,9 @@ remotion-service/.cache/
 *.webp
 *.gif
 
+# ── 예외: 핵심 자산 (개발자 밈 모션 클립, 총 8MB) ────────────
+!remotion-service/public/gree/dev_memes/*.mp4
+
 # ── 로그 / 캐시 ───────────────────────────────────────────────
 __pycache__/
 *.pyc
